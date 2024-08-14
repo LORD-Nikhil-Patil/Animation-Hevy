@@ -1,6 +1,7 @@
 import Hero from './hero';
 import About from './about';
 import Information from './information';
+import ProductInformation from './productInfo'
 import './App.css';
 
 
@@ -11,6 +12,7 @@ function App() {
      <Hero />
      <About />
      <Information />
+     <ProductInformation />
     </>
   )
 }
