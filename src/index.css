@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
 @font-face {
     font-family: 'nuance-italic';
     src: url('./assets/NuancesExtended-ExtraLightItalicTrial.otf') format('opentype');
