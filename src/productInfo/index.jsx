@@ -24,7 +24,7 @@ const ProductInformation = () => {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-6 mt-16">
         <div className="grid col-span-1">
           <p className="text-4xl text-red font-normal">
             But there are so many different informations all around that the
