@@ -39,30 +39,30 @@ const ProductDisplay = () => {
   }, [isInView]);
 
   return (
-    <section className="pt-14 px-9 w-full h-svh">
+    <section className="pt-14 px-9 lg:mt-40 md:mt-40 w-full h-svh">
       <div
         ref={scrollContainerRef}
         className="flex overflow-x-auto space-x-4 p-4"
       >
-        <div className="min-w-[800px] p-16 bg-black flex items-center justify-center">
+        <div className="min-h-60 min-w-80 p-5 xl:min-w-[800px] xl:p-16 bg-black flex items-center justify-center">
           <img
             src="https://framerusercontent.com/images/ptQqpTVDZsXub82fDGM7SuYT9u0.webp"
             className="h-full w-full"
           />
         </div>
-        <div className="min-w-[800px]">
+        <div className="min-h-60 min-w-80 xl:min-w-[800px]">
           <img
             src="https://framerusercontent.com/images/nUCubJRewbpnYV5PauZzoiKc9c8.webp"
             className="h-full w-full"
           />
         </div>
-        <div className="min-w-[800px] p-16 bg-black flex items-center justify-center">
+        <div className="min-h-60 min-w-80 p-5 xl:min-w-[800px] xl:p-16 bg-black flex items-center justify-center">
           <img
             src="https://framerusercontent.com/images/JzfvEO5S5FHXI83gjCTvpI01mgw.webp"
             className="h-full w-full"
           />
         </div>
-        <div className="min-w-[800px]">
+        <div className="min-h-60 min-w-80 xl:min-w-[800px]">
           <img
             src="https://framerusercontent.com/images/RRd0Ma6Yu7VCqLA7GebZuHBeaU.webp"
             className="h-full w-full"
