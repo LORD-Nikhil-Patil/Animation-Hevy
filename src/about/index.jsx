@@ -79,7 +79,7 @@ const About = () => {
           ))}
         </ul>
       </div>
-      <div className="grid grid-cols-1 xl:grid-cols-2">
+      <div className="grid grid-cols-1 mt-10 xl:grid-cols-2">
         <div className="grid col-span-1">
           <motion.div
             initial={{ translateY: 100 }}

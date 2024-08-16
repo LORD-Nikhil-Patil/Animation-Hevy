@@ -23,8 +23,8 @@ const Information = () => {
   };
 
   return (
-    <section className="pt-10 px-9 w-full h-svh">
-      <div className="px-5">
+    <section className="pt-10 px-9 w-full">
+      <div className="">
         <div
           className={`flex justify-start ${eleIn1 && "animate-slideUp1"}`}
           id="info1"
@@ -42,33 +42,32 @@ const Information = () => {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-1 xl:grid-cols-2 my-16">
-        <div className="grid col-span-1 my-10">
-          <p className="text-3xl text-red font-normal">
+      <div className="grid grid-cols-1 xl:grid-cols-2 z-20">
+        <div className="grid col-span-1">
+          <p className="text-xl leading-6 text-red font-normal lg:text-2xl lg:my-12 md:text-xl md:font-normal xl:text-4xl xl:w-5/6 xl:mt-14">
             OVER 10 YEARS OF EXPERTISE TO TEACH YOU EVERYTHING ABOUT
             <span className="font-bold mx-1">FONT DESIGN</span> AND
             <span className="font-bold mx-1">TYPEFACE PRODUCTION</span>
           </p>
         </div>
-        <div className="grid col-span-1 h-full text-end ">
-          <motion.div
-            initial={{ translateY: 100 }}
-            animate={{
-              translateY: handleImageTranslate(550),
-            }}
-            className="w-full min-h-96 bg-black flex items-center justify-center"
-          >
+        <motion.div
+          initial={{ translateY: 100 }}
+          animate={{
+            translateY: handleImageTranslate(550),
+          }}
+          className="grid col-span-1 h-full text-end -z-10"
+        >
+          <div className="w-full bg-black py-8 px-10 flex items-center justify-center md:py-16 md:px-16">
             <img
               src="https://framerusercontent.com/images/J9uHvuNn3lWx4R33NXJf2ntDVQM.webp"
               alt="Blaze Type: How To Design Fonts?"
-              className={`w-3/4`}
+              className={""}
             />
-            
-          </motion.div>
-          <div className="text-red text-2xl font-normal my-3 mr-auto">
+          </div>
+          <div className="text-red text-1xl font-normal my-3 mr-auto">
             Master Type Anatomy
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
