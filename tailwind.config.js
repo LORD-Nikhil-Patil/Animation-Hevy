@@ -12,7 +12,8 @@ export default {
     colors: {
       red: "#FF0000",
       black: "#000",
-      gray: "rgb(179, 179, 179)"
+      gray: "rgb(179, 179, 179)",
+      white: "#ffffff"
     },
     extend: {
       animationDelay: {
