@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { useScroll, motion, useMotionValueEvent } from "framer-motion";
 
-export const ContentItem = ({img}) => {
+export const ContentItem = ({img, small=100}) => {
   const ref = useRef(null);
   const [scroll, setScroll] = useState(0)
   const { scrollYProgress } = useScroll({
@@ -11,14 +11,15 @@ export const ContentItem = ({img}) => {
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     setScroll(latest);
   });
-  console.log("scroll", scroll, 80 - scroll * 100)
+  console.log("scroll", scroll * 500, 400 - (scroll * 400))
   return (
     <motion.div
       ref={ref}
-      className={`flex items-center justify-center p-16 my-10 bg-black`}
-      initial={{ translateX: 0 }}
+      className={`p-10 lg:w-11/12 flex items-center justify-center lg:p-16 my-10 bg-black`}
+      initial={{ translateX: 400 }}
             animate={{
-              translateX: 80 - scroll * 100,
+              translateX: 490 - (scroll * 400),
+              translateY: 200
             }}
             transition={{
               duration: 0.8,
