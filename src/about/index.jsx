@@ -79,7 +79,7 @@ const About = () => {
           ))}
         </ul>
       </div>
-      <div className="grid grid-cols-1 xl:grid-cols-2 mx-4">
+      <div className="grid grid-cols-1 xl:grid-cols-2">
         <div className="grid col-span-1">
           <motion.div
             initial={{ translateY: 100 }}
@@ -94,13 +94,13 @@ const About = () => {
               alt="Blaze Type: How To Design Fonts?"
               className="xl:w-4/5"
             />
-            <div className="text-red text-1xl font-normal my-3 xl:text-2xl">
+            <div className="text-red text-2xl font-normal my-3 xl:text-2xl">
               Become a Font Designer
             </div>
           </motion.div>
         </div>
         <div className="grid col-span-1 z-20 bg-white">
-          <div className="text-1xl text-red font-normal xl:text-4xl">
+          <div className="text-2xl text-red font-normal xl:text-4xl">
             Whether experienced or beginner: learn everything you need to know
             to design fonts from A to Z. From sketching to design and
             production, you’ll master all the skills to become a professional
