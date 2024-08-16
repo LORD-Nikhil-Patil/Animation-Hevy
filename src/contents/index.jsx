@@ -1,10 +1,12 @@
 import { useState, useRef } from "react";
-import { useScroll, motion, useMotionValueEvent } from "framer-motion";
+import { useScroll, motion, useMotionValueEvent, useInView } from "framer-motion";
 
 import { ContentItem } from "./contentItem";
 const Contents = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
   const commonEleOne = useRef(null);
+  const responsiveRef = useRef(null);
+  const isInView = useInView(responsiveRef)
 
   const { scrollYProgress } = useScroll({
     target: commonEleOne,
@@ -86,10 +88,10 @@ const Contents = () => {
         </div>
       </div>
       </div>
-      <div className="flex justify-center flex-col lg:hidden max-w-full overflow-x-auto">
-        <ContentItem img={contentImg3} />
-        <ContentItem img={contentImg4} />
-        <ContentItem img={contentImg5} />
+      <div ref={responsiveRef} className="flex justify-center flex-col lg:hidden max-w-full overflow-x-auto">
+        <ContentItem img={contentImg3} inView={isInView} />
+        <ContentItem img={contentImg4} inView={isInView} />
+        <ContentItem img={contentImg5} inView={isInView} />
       </div>
       <div className="h-svh"></div>
     </section>

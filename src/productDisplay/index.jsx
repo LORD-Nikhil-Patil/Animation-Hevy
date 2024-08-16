@@ -39,7 +39,7 @@ const ProductDisplay = () => {
   }, [isInView]);
 
   return (
-    <section className="pt-14 px-9 lg:mt-40 md:mt-40 w-full h-svh">
+    <section className="pt-14 px-9 lg:mt-40 md:mt-40 w-full">
       <div
         ref={scrollContainerRef}
         className="flex overflow-x-auto space-x-4 p-4"
